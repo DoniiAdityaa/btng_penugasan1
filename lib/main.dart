@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:tugas1/core/di/injection.dart';
 import 'package:tugas1/login_page.dart';
 import 'package:tugas1/ui/colors.dart';
 
 void main() {
+  WidgetsFlutterBinding.ensureInitialized();
+  setupLocator();
   runApp(const MyApp());
 }
 
